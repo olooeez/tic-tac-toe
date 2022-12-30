@@ -1,0 +1,21 @@
+# Ignore bundler config
+/.bundle
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+
+# Ignore test files and coverage reports.
+/spec/reports
+/spec/*.log
+/coverage*
+
+# Ignore IDE files
+.idea/
+
+# Ignore local development files
+.env
+.env.test
