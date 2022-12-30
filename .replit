@@ -1,2 +1,20 @@
+run = ["ruby", "bin/tic_tac_toe"]
+hidden = [".bundle"]
+
+entrypoint = "tic_tac_toe"
+
+[packager]
 language = "ruby"
-run = "ruby bin/tic_tac_toe"
+
+[packager.features]
+packageSearch = true
+guessImports = true
+
+[languages.ruby]
+pattern = "**/*.rb"
+
+[languages.ruby.languageServer]
+start = ["solargraph", "stdio"]
+
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix", "README.md"]
