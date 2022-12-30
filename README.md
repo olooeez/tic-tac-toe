@@ -1,3 +1,5 @@
+[![CI](https://github.com/olooeez/tic-tac-toe/actions/workflows/ci.yml/badge.svg)](https://github.com/olooeez/tic-tac-toe/actions/workflows/ci.yml)
+
 # tic-tac-toe
 
 Tic Tac Toe is a simple two-player game in which players take turns placing their symbol (X, O, ...) on a 3x3 grid. The first player to get three of their symbols in a row (horizontally, vertically, or diagonally) wins the game.
