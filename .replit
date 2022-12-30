@@ -1,7 +1,7 @@
-run = ["ruby", "bin/tic_tac_toe"]
+run = ["bundle", "exec", "ruby", "bin/tic_tac_toe"]
 hidden = [".bundle"]
 
-entrypoint = "tic_tac_toe"
+entrypoint = "bin/tic_tac_toe"
 
 [packager]
 language = "ruby"
