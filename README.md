@@ -26,6 +26,8 @@ cd tic-tac-toe
 ruby bin/tic_tac_toe
 ```
 
+Or you can use replit to run the program [right here](https://replit.com/@olooeez/tic-tac-toe)
+
 ## Playing the game
 
 To play the game, simply follow the prompts in the command line. The game will ask you to enter the index where you want to place your symbol.
@@ -36,4 +38,4 @@ If you would like to contribute to this project, please feel free to open a pull
 
 ## License
 
-This project is licensed under the GPL-3.0 License. See the LICENSE file for details.
+This project is licensed under the GPL-3.0 License. See the [LICENSE](https://github.com/olooeez/tic-tac-toe/blob/main/LICENSE) file for details.
