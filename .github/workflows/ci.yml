@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle config set --local with 'development'
+          bundle install
+      - name: Run RSpec tests
+        run: bundle exec rspec
