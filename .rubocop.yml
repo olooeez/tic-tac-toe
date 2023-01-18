@@ -1,0 +1,35 @@
+AllCops:
+  NewCops: enable
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Naming/AccessorMethodName:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Layout/LineLength:
+  Enabled: false
+
+Layout/HeredocIndentation:
+  Enabled: false
+
+Style/ClassVars:
+  Enabled: false

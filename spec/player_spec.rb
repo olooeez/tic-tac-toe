@@ -1,8 +1,5 @@
-# frozen_string_literal: true
-
 require_relative '../lib/player'
 
-# rubocop:disable Metrics/BlockLength
 describe Player do
   describe '.initialize' do
     it 'creates a new player with a name and symbol' do
@@ -62,4 +59,3 @@ describe Player do
     end
   end
 end
-# rubocop:enable Metrics/BlockLength

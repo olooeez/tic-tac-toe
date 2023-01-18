@@ -1,11 +1,6 @@
-# frozen_string_literal: true
-
-# The Player class for the Tic Tac Toe
 class Player
-  # rubocop:disable Style/ClassVars
   @@names_taken = []
   @@symbols_taken = []
-  # rubocop:enable Style/ClassVars
 
   attr_reader :name, :symbol
 

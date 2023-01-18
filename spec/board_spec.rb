@@ -1,8 +1,5 @@
-# frozen_string_literal: true
-
 require_relative '../lib/board'
 
-# rubocop:disable Metrics/BlockLength
 describe Board do
   let(:board) { Board.new }
 
@@ -50,7 +47,7 @@ describe Board do
 
   describe '#full?' do
     it 'returns true if the board is full' do
-      board.tiles = ['X', 'O', 'X', 'O', 'X', 'O', 'X', 'O', 'X']
+      board.tiles = %w[X O X O X O X O X]
       expect(board.full?).to be true
     end
 
@@ -59,4 +56,3 @@ describe Board do
     end
   end
 end
-# rubocop:enable Metrics/BlockLength

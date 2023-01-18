@@ -1,9 +1,6 @@
-# frozen_string_literal: true
-
 require_relative 'player'
 require_relative 'board'
 
-# Pretty much the main game
 class Game
   def initialize
     system 'clear||cls'
@@ -20,7 +17,6 @@ class Game
     @board = Board.new
   end
 
-  # rubocop:disable Metrics/MethodLength, Metrics/AbcSize
   def run
     loop do
       system 'clear||cls'
@@ -46,11 +42,9 @@ class Game
       @current = Player.switch_players(@first, @second, @current)
     end
   end
-  # rubocop:enable Metrics/AbcSize
 
   private
 
-  # rubocop:disable Style/NegatedIf
   def init_player
     name = nil
     symbol = nil
@@ -59,7 +53,7 @@ class Game
       print '• Player name: '
       name = gets.chomp
 
-      break if !Player.name_taken?(name)
+      break unless Player.name_taken?(name)
 
       puts 'Invalid name. Try again.'
     end
@@ -68,14 +62,13 @@ class Game
       print '• Player symbol: '
       symbol = gets.chomp
 
-      break if !Player.symbol_taken?(symbol)
+      break unless Player.symbol_taken?(symbol)
 
       puts 'Invalid name. Try again.'
     end
 
     Player.new(name, symbol)
   end
-  # rubocop:enable Style/NegatedIf
 
   def position
     index = nil
@@ -91,5 +84,4 @@ class Game
 
     index
   end
-  # rubocop:enable Metrics/MethodLength
 end
