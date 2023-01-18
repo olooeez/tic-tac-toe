@@ -4,7 +4,9 @@
 
 Tic Tac Toe is a simple two-player game in which players take turns placing their symbol (X, O, ...) on a 3x3 grid. The first player to get three of their symbols in a row (horizontally, vertically, or diagonally) wins the game.
 
-## Running the game
+## Usage
+
+### Running the game
 
 To run the Tic Tac Toe game, follow these steps:
 
@@ -28,7 +30,7 @@ ruby bin/tic_tac_toe
 
 Or you can use replit to run the program [right here](https://replit.com/@olooeez/tic-tac-toe)
 
-## Playing the game
+### Playing the game
 
 To play the game, simply follow the prompts in the command line. The game will ask you to enter the index where you want to place your symbol.
 
