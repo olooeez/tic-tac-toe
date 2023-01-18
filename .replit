@@ -1,20 +1,2 @@
-run = ["bundle", "exec", "ruby", "bin/tic_tac_toe"]
-hidden = [".bundle"]
-
-entrypoint = "bin/tic_tac_toe"
-
-[packager]
-language = "ruby"
-
-[packager.features]
-packageSearch = true
-guessImports = true
-
-[languages.ruby]
-pattern = "**/*.rb"
-
-[languages.ruby.languageServer]
-start = ["solargraph", "stdio"]
-
-[gitHubImport]
-requiredFiles = [".replit", "replit.nix", "README.md"]
+language = 'ruby'
+run = 'ruby lib/tic_tac_toe.rb'
