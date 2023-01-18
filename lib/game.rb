@@ -3,13 +3,12 @@ require_relative 'board'
 
 class Game
   def initialize
-    system 'clear||cls'
-    puts '|-------- Tic Tac Toe --------|'
+    puts 'Welcome to Tic Tac Toe!'
 
-    puts "\nSome basic information for the two players:\n\n"
+    puts '> First player info.'
     @first = init_player
 
-    puts "\n|-----------------------------|\n\n"
+    puts '> Second player info.'
     @second = init_player
 
     @current = @first
@@ -19,23 +18,18 @@ class Game
 
   def run
     loop do
-      system 'clear||cls'
-      puts 'Here is your Tic Tac Toe table:'
+      puts '> Here is your Tic Tac Toe table:'
       @board.print
       index = position
       @board.update(index, @current.symbol)
 
       if @board.winner?
-        system 'clear||cls'
-        puts "#{@current.name} wins!"
-        sleep 2
+        puts "> #{@current.name} wins!"
         break
       end
 
       if @board.full?
-        system 'clear||cls'
-        puts 'It\s a draw!'
-        sleep 2
+        puts "> It's a draw!"
         break
       end
 
@@ -55,7 +49,7 @@ class Game
 
       break unless Player.name_taken?(name)
 
-      puts 'Invalid name. Try again.'
+      puts '> Error: Invalid name. Try again.'
     end
 
     loop do
@@ -64,7 +58,7 @@ class Game
 
       break unless Player.symbol_taken?(symbol)
 
-      puts 'Invalid name. Try again.'
+      puts '> Error: Invalid name. Try again.'
     end
 
     Player.new(name, symbol)
@@ -79,7 +73,7 @@ class Game
 
       break if index.between?(1, 9) && @board.can_move?(index)
 
-      puts 'Invalid index. Please try again.'
+      puts '> Error: Invalid index. Please try again.'
     end
 
     index
