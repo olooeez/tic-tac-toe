@@ -58,7 +58,7 @@ To run the application in your browser, checkout the [Replit](https://replit.com
 
 ## Contributing
 
-If you would like to contribute to this project, please feel free to open a merge request. All contributions are welcome!
+If you would like to contribute to this project, please feel free to open a pull request. All contributions are welcome!
 
 ## License
 
