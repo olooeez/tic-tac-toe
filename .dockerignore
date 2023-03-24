@@ -1,0 +1,15 @@
+# License file
+LICENSE
+
+# Readme file
+README.md
+
+# Configuration files
+.rspec
+.rubocop.yml
+
+# Test folder
+spec
+
+# Coverage folder
+coverage
