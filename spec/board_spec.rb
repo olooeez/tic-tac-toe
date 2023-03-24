@@ -3,13 +3,13 @@ require_relative '../lib/board'
 describe Board do
   let(:board) { Board.new }
 
-  describe '#initialize' do
+  describe '.initialize' do
     it 'initializes the board with the correct tiles' do
       expect(board.tiles).to eq([1, 2, 3, 4, 5, 6, 7, 8, 9])
     end
   end
 
-  describe '#update' do
+  describe '.update' do
     it 'updates the board with the given symbol in the given position' do
       board.update(1, 'X')
       expect(board.tiles).to eq(['X', 2, 3, 4, 5, 6, 7, 8, 9])
@@ -22,7 +22,7 @@ describe Board do
     end
   end
 
-  describe '#can_move?' do
+  describe '.can_move?' do
     it 'returns true if the move is valid' do
       expect(board.can_move?(1)).to be true
     end
@@ -33,7 +33,7 @@ describe Board do
     end
   end
 
-  describe '#winner?' do
+  describe '.winner?' do
     it 'returns true if there is a winning combination on the board' do
       board.tiles = ['X', 'X', 'X', 4, 5, 6, 7, 8, 9]
       expect(board.winner?).to be true
@@ -45,7 +45,7 @@ describe Board do
     end
   end
 
-  describe '#full?' do
+  describe '.full?' do
     it 'returns true if the board is full' do
       board.tiles = %w[X O X O X O X O X]
       expect(board.full?).to be true
