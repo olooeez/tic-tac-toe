@@ -34,6 +34,6 @@ class Board
   end
 
   def full?
-    @tiles.all? { |tile| tile =~ /[^0-9]/ }
+    @tiles.all? { |tile| tile.to_s =~ /[^0-9]/ }
   end
 end
