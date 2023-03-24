@@ -1,4 +1,4 @@
-[![CI](https://github.com/olooeez/tic-tac-toe/actions/workflows/ci.yml/badge.svg)](https://github.com/olooeez/tic-tac-toe/actions/workflows/ci.yml)
+[![test](https://github.com/olooeez/tic-tac-toe/actions/workflows/test.yml/badge.svg)](https://github.com/olooeez/tic-tac-toe/actions/workflows/test.yml)
 
 # tic-tac-toe
 
@@ -15,7 +15,8 @@ Below is how you can use tic-tac-toe. Feel free to fork or copy them, but be awa
 You can use the following options to use tic-tac-toe:
 
 1. [Run in your machine](#run-in-your-machine)
-2. [Run in your browser](#run-in-your-browser)
+2. [Run in a Docker container](#run-in-a-docker-container)
+3. [Run in your browser](#run-in-your-browser)
 
 ### Run in your machine
 
@@ -24,7 +25,7 @@ You can use the following options to use tic-tac-toe:
 To run tic-tac-toe, you must clone this repository with the following command:
 
 ```
-git clone https://gitlab.com/olooeez/tic-tac-toe.git
+git clone https://github.com/olooeez/tic-tac-toe.git
 ```
 
 #### Enter the cloned repository
@@ -49,6 +50,40 @@ Finally use the command below to run the project:
 
 ```
 ruby lib/tic_tac_toe.rb
+```
+
+### Run in a Docker container
+
+#### Clone the repo
+
+To run the program in a docker container, clone the repository to your machine first:
+
+```
+git clone https://github.com/olooeez/tic-tac-toe.git
+```
+
+#### Enter the cloned repository
+
+After cloning, you must enter the local repository using the following command:
+
+```
+cd tic-tac-toe
+```
+
+#### Build the docker image
+
+Then, use the command below to build the Docker image:
+
+```
+docker build -t olooeez/tic-tac-toe:latest .
+```
+
+#### Run the image in a container
+
+Then, to run the image in a container, use the following command:
+
+```
+docker run -it --rm olooeez/tic-tac-toe:latest
 ```
 
 ### Run in your browser
